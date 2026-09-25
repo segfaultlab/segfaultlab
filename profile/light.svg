@@ -52,10 +52,10 @@ text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',mo
 <text x="360.0" y="364" class="r" style="animation-delay:2.15s"><tspan fill="#953800">GitHub: </tspan><tspan fill="#6e7781">.......................... </tspan><tspan fill="#0a3069">github.com/segfaultlab</tspan></text>
 <text x="24" y="384" class="r" style="animation-delay:2.20s"><tspan fill="#6e7781">#2  main () at life.cpp:42</tspan></text>
 <text x="360.0" y="404" class="r" style="animation-delay:2.25s"><tspan fill="#6e7781">- GitHub Stats -------------------------------------------</tspan></text>
-<text x="360.0" y="424" class="r" style="animation-delay:2.30s"><tspan fill="#953800">Public Repos: </tspan><tspan fill="#6e7781">......................................... </tspan><tspan fill="#0a3069">-</tspan></text>
-<text x="360.0" y="444" class="r" style="animation-delay:2.35s"><tspan fill="#953800">Stars: </tspan><tspan fill="#6e7781">................................................ </tspan><tspan fill="#0a3069">-</tspan></text>
-<text x="360.0" y="464" class="r" style="animation-delay:2.40s"><tspan fill="#953800">Followers: </tspan><tspan fill="#6e7781">............................................ </tspan><tspan fill="#0a3069">-</tspan></text>
-<text x="360.0" y="484" class="r" style="animation-delay:2.45s"><tspan fill="#953800">Contributions (all time): </tspan><tspan fill="#6e7781">............................. </tspan><tspan fill="#0a3069">-</tspan></text>
+<text x="360.0" y="424" class="r" style="animation-delay:2.30s"><tspan fill="#953800">Public Repos: </tspan><tspan fill="#6e7781">......................................... </tspan><tspan fill="#0a3069">2</tspan></text>
+<text x="360.0" y="444" class="r" style="animation-delay:2.35s"><tspan fill="#953800">Stars: </tspan><tspan fill="#6e7781">................................................ </tspan><tspan fill="#0a3069">0</tspan></text>
+<text x="360.0" y="464" class="r" style="animation-delay:2.40s"><tspan fill="#953800">Followers: </tspan><tspan fill="#6e7781">............................................ </tspan><tspan fill="#0a3069">1</tspan></text>
+<text x="360.0" y="484" class="r" style="animation-delay:2.45s"><tspan fill="#953800">Contributions (all time): </tspan><tspan fill="#6e7781">............................ </tspan><tspan fill="#0a3069">22</tspan></text>
 <g class="r" style="animation-delay:2.70s">
 <text x="24" y="524"><tspan fill="#1a7f37">koko@segfaultlab</tspan><tspan fill="#24292f">:</tspan><tspan fill="#0550ae">~</tspan><tspan fill="#24292f">$ </tspan></text>
 <rect class="blink" x="192.0" y="510" width="8.4" height="18" fill="#24292f"/>
