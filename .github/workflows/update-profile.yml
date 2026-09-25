@@ -50,5 +50,6 @@ jobs:
             echo "nothing changed"
           else
             git commit -m 'chore: update profile stats'
+            git pull --rebase origin main
             git push
           fi
