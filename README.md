@@ -14,6 +14,10 @@
   <img alt="贪吃蛇吃掉贡献格子" src="profile/snake.svg" width="100%">
 </picture>
 
+### `$ cat /var/log/visitors | wc -l`
+
+<img src="https://komarev.com/ghpvc/?username=segfaultlab&label=you%20are%20visitor%20no.&color=3fb950&style=flat-square" alt="访客计数">
+
 ```text
 $ ./life
 Segmentation fault (core dumped)   # 然后开始 debug
