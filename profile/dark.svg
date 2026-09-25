@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="871" height="536" viewBox="0 0 871 536">
+<svg xmlns="http://www.w3.org/2000/svg" width="871" height="636" viewBox="0 0 871 636">
 <style>
 text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace;font-size:14px;white-space:pre}
 .r{opacity:0;animation:show .01s linear forwards}
@@ -10,7 +10,7 @@ text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',mo
 .blink{animation:blink 1s step-end infinite}
 @keyframes blink{50%{opacity:0}}
 </style>
-<rect x="0.5" y="0.5" width="870" height="535" rx="10" fill="#161b22" stroke="#30363d"/>
+<rect x="0.5" y="0.5" width="870" height="635" rx="10" fill="#161b22" stroke="#30363d"/>
 <path d="M0.5 36 V10.5 a10 10 0 0 1 10 -10 H860.5 a10 10 0 0 1 10 10 V36 Z" fill="#21262d"/>
 <line x1="0.5" y1="36" x2="870.5" y2="36" stroke="#30363d"/>
 <circle cx="22" cy="18" r="6" fill="#ff5f57"/>
@@ -56,8 +56,15 @@ text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',mo
 <text x="360.0" y="444" class="r" style="animation-delay:2.35s"><tspan fill="#ffa657">Stars: </tspan><tspan fill="#8b949e">................................................ </tspan><tspan fill="#a5d6ff">0</tspan></text>
 <text x="360.0" y="464" class="r" style="animation-delay:2.40s"><tspan fill="#ffa657">Followers: </tspan><tspan fill="#8b949e">............................................ </tspan><tspan fill="#a5d6ff">1</tspan></text>
 <text x="360.0" y="484" class="r" style="animation-delay:2.45s"><tspan fill="#ffa657">Contributions (all time): </tspan><tspan fill="#8b949e">............................ </tspan><tspan fill="#a5d6ff">22</tspan></text>
-<g class="r" style="animation-delay:2.70s">
-<text x="24" y="524"><tspan fill="#3fb950">koko@segfaultlab</tspan><tspan fill="#c9d1d9">:</tspan><tspan fill="#79c0ff">~</tspan><tspan fill="#c9d1d9">$ </tspan></text>
-<rect class="blink" x="192.0" y="510" width="8.4" height="18" fill="#c9d1d9"/>
+<text x="24" y="524" class="r" style="animation-delay:2.70s"><tspan fill="#3fb950">koko@segfaultlab</tspan><tspan fill="#c9d1d9">:</tspan><tspan fill="#79c0ff">~</tspan><tspan fill="#c9d1d9">$ </tspan><tspan fill="#c9d1d9">fortune</tspan></text>
+<style>@keyframes type2{to{transform:translateX(58.8px)}}</style>
+<rect x="192.0" y="509" width="58.8" height="20" fill="#161b22" style="animation:type2 0.7s steps(7) 3.00s forwards"/>
+<rect x="192.0" y="510" width="8.4" height="18" fill="#c9d1d9" style="opacity:0;animation:show .01s linear 2.80s forwards,type2 0.7s steps(7) 3.00s forwards,hide .01s linear 3.90s forwards"/>
+<text x="24" y="544" class="r" style="animation-delay:4.00s"><tspan fill="#c9d1d9">Measuring programming progress by lines of code is like measuring aircraft building progress</tspan></text>
+<text x="24" y="564" class="r" style="animation-delay:4.00s"><tspan fill="#c9d1d9">by weight.</tspan></text>
+<text x="24" y="584" class="r" style="animation-delay:4.00s"><tspan fill="#8b949e">    -- Bill Gates</tspan></text>
+<g class="r" style="animation-delay:4.30s">
+<text x="24" y="624"><tspan fill="#3fb950">koko@segfaultlab</tspan><tspan fill="#c9d1d9">:</tspan><tspan fill="#79c0ff">~</tspan><tspan fill="#c9d1d9">$ </tspan></text>
+<rect class="blink" x="192.0" y="610" width="8.4" height="18" fill="#c9d1d9"/>
 </g>
 </svg>

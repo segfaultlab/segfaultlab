@@ -7,6 +7,7 @@ stats.json；拉取失败或本地没有 token 时沿用 stats.json 里的旧值
 import datetime as dt
 import json
 import os
+import textwrap
 import urllib.request
 from pathlib import Path
 
@@ -56,6 +57,45 @@ GDB = [
     ("      at crossbuild.cpp:404", "muted"),
     ("#2  main () at life.cpp:42", "muted"),
 ]
+
+
+FORTUNES = [
+    ("Talk is cheap. Show me the code.", "Linus Torvalds"),
+    ("Premature optimization is the root of all evil.", "Donald Knuth"),
+    ("Debugging is twice as hard as writing the code in the first place. Therefore, if you "
+     "write the code as cleverly as possible, you are, by definition, not smart enough to debug it.",
+     "Brian Kernighan"),
+    ("There are only two hard things in Computer Science: cache invalidation and naming things.",
+     "Phil Karlton"),
+    ("C makes it easy to shoot yourself in the foot; C++ makes it harder, but when you do it "
+     "blows your whole leg off.", "Bjarne Stroustrup"),
+    ("Programs must be written for people to read, and only incidentally for machines to execute.",
+     "Harold Abelson"),
+    ("Simplicity is prerequisite for reliability.", "Edsger W. Dijkstra"),
+    ("Make it work, make it right, make it fast.", "Kent Beck"),
+    ("Any fool can write code that a computer can understand. "
+     "Good programmers write code that humans can understand.", "Martin Fowler"),
+    ("Controlling complexity is the essence of computer programming.", "Brian Kernighan"),
+    ("The most dangerous phrase in the language is: we've always done it this way.", "Grace Hopper"),
+    ("Walking on water and developing software from a specification are easy if both are frozen.",
+     "Edward V. Berard"),
+    ("Measuring programming progress by lines of code is like measuring aircraft building "
+     "progress by weight.", "Bill Gates"),
+    ("Weeks of coding can save you hours of planning.", "Unknown"),
+    ("It works on my machine.", "Every developer, ever"),
+    ("Undefined behavior means anything can happen, including exactly what you expected.",
+     "C++ folklore"),
+    ("There's no place like 127.0.0.1.", "Unknown"),
+    ("Segmentation fault (core dumped)", "My terminal, usually at 3 a.m."),
+]
+FORTUNE_LINES = 2  # 名言固定占两行，图的高度每天不变
+
+
+def fortune_of(today):
+    quote, author = FORTUNES[today.toordinal() % len(FORTUNES)]
+    lines = textwrap.wrap(quote, LEFT_COLS + RIGHT_COLS - 4)
+    assert len(lines) <= FORTUNE_LINES, quote
+    return lines + [""] * (FORTUNE_LINES - len(lines)), author
 
 
 def fetch_stats(token):
@@ -204,10 +244,24 @@ def text_line(x, y, spans, theme, delay):
     return f'<text x="{x}" y="{y}" class="r" style="animation-delay:{delay:.2f}s">{parts}</text>'
 
 
+def typed_command(name, x, y, command, start, duration, hide_at, theme):
+    w = len(command) * CHAR_W
+    steps = len(command)
+    return [
+        f"<style>@keyframes {name}{{to{{transform:translateX({w:.1f}px)}}}}</style>",
+        f'<rect x="{x:.1f}" y="{y - 15}" width="{w:.1f}" height="20" fill="{theme["window"]}" '
+        f'style="animation:{name} {duration}s steps({steps}) {start:.2f}s forwards"/>',
+        f'<rect x="{x:.1f}" y="{y - 14}" width="{CHAR_W:.1f}" height="18" fill="{theme["text"]}" '
+        f'style="opacity:0;animation:show .01s linear {start - 0.2:.2f}s forwards,'
+        f'{name} {duration}s steps({steps}) {start:.2f}s forwards,hide .01s linear {hide_at:.2f}s forwards"/>',
+    ]
+
+
 def render(theme, stats, today):
     left, right = left_column(), right_column(stats, today)
     body_rows = max(len(left), len(right))
-    rows = body_rows + 4  # 命令行、空行、输出、空行、结尾提示符
+    # neofetch、空行、输出、空行、fortune、名言、署名、空行、结尾提示符
+    rows = body_rows + FORTUNE_LINES + 7
     width = round(PAD_X * 2 + (LEFT_COLS + RIGHT_COLS) * CHAR_W)
     height = TITLE_H + 20 + rows * LINE_H
     base_y = TITLE_H + 28
@@ -260,8 +314,23 @@ def render(theme, stats, today):
         if i < len(right):
             out.append(text_line(round(right_x, 1), y, right[i], theme, delay))
 
-    end_y = base_y + (body_rows + 3) * LINE_H
-    end_delay = output_start + body_rows * step + 0.2
+    fortune_row = body_rows + 3
+    fortune_y = base_y + fortune_row * LINE_H
+    fortune_prompt = output_start + body_rows * step + 0.2
+    fortune_type = fortune_prompt + 0.3
+    fortune_out = fortune_type + 0.7 + 0.3
+    out.append(f'<text x="{PAD_X}" y="{fortune_y}" class="r" style="animation-delay:{fortune_prompt:.2f}s">'
+               f'{parts}<tspan fill="{theme["text"]}">fortune</tspan></text>')
+    out.extend(typed_command("type2", cmd_x, fortune_y, "fortune", fortune_type, 0.7, fortune_out - 0.1, theme))
+
+    lines, author = fortune_of(today)
+    for i, line in enumerate(lines):
+        out.append(text_line(PAD_X, fortune_y + (i + 1) * LINE_H, [(line, "text")], theme, fortune_out))
+    author_y = fortune_y + (FORTUNE_LINES + 1) * LINE_H
+    out.append(text_line(PAD_X, author_y, [(f"    -- {author}", "muted")], theme, fortune_out))
+
+    end_y = author_y + 2 * LINE_H
+    end_delay = fortune_out + 0.3
     out.append(f'<g class="r" style="animation-delay:{end_delay:.2f}s">')
     out.append(f'<text x="{PAD_X}" y="{end_y}">{parts}</text>')
     out.append(f'<rect class="blink" x="{cmd_x:.1f}" y="{end_y - 14}" width="{CHAR_W:.1f}" height="18" fill="{theme["text"]}"/>')
