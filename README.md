@@ -16,7 +16,7 @@
 
 ### `$ cat /var/log/visitors | wc -l`
 
-<img src="https://count.getloli.com/@segfaultlab?name=segfaultlab&theme=3d-num&padding=7&offset=0&align=top&scale=1&pixelated=1&darkmode=auto" alt="访客计数">
+<img src="https://count.getloli.com/@segfaultlab?name=segfaultlab&theme=nixietube-1&padding=7&offset=0&align=top&scale=1&pixelated=0&darkmode=auto" alt="访客计数">
 
 ```text
 $ ./life
