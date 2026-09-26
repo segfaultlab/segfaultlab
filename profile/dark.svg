@@ -33,7 +33,7 @@ text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',mo
 <text x="360.0" y="104" class="r" style="animation-delay:1.50s"><tspan fill="#3fb950">koko</tspan><tspan fill="#c9d1d9">@</tspan><tspan fill="#3fb950">segfaultlab</tspan></text>
 <text x="360.0" y="124" class="r" style="animation-delay:1.55s"><tspan fill="#8b949e">----------------------------------------------------------</tspan></text>
 <text x="360.0" y="144" class="r" style="animation-delay:1.60s"><tspan fill="#ffa657">OS: </tspan><tspan fill="#8b949e">........................... </tspan><tspan fill="#a5d6ff">Linux, macOS, OpenHarmony</tspan></text>
-<text x="360.0" y="164" class="r" style="animation-delay:1.65s"><tspan fill="#ffa657">Uptime: </tspan><tspan fill="#8b949e">...................... </tspan><tspan fill="#a5d6ff">4 years, 3 months, 25 days</tspan></text>
+<text x="360.0" y="164" class="r" style="animation-delay:1.65s"><tspan fill="#ffa657">Uptime: </tspan><tspan fill="#8b949e">...................... </tspan><tspan fill="#a5d6ff">4 years, 3 months, 26 days</tspan></text>
 <text x="360.0" y="184" class="r" style="animation-delay:1.70s"><tspan fill="#ffa657">Host: </tspan><tspan fill="#8b949e">...................................... </tspan><tspan fill="#a5d6ff">Wuhan, China</tspan></text>
 <text x="360.0" y="204" class="r" style="animation-delay:1.75s"><tspan fill="#ffa657">Kernel: </tspan><tspan fill="#8b949e">................. </tspan><tspan fill="#a5d6ff">Embedded Linux, OTA, Toolchains</tspan></text>
 <text x="360.0" y="224" class="r" style="animation-delay:1.80s"><tspan fill="#ffa657">Focus: </tspan><tspan fill="#8b949e">................. </tspan><tspan fill="#a5d6ff">Cross-compilation, Agent Runtime</tspan></text>
@@ -52,16 +52,16 @@ text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',mo
 <text x="360.0" y="364" class="r" style="animation-delay:2.15s"><tspan fill="#ffa657">GitHub: </tspan><tspan fill="#8b949e">.......................... </tspan><tspan fill="#a5d6ff">github.com/segfaultlab</tspan></text>
 <text x="24" y="384" class="r" style="animation-delay:2.20s"><tspan fill="#8b949e">#2  main () at life.cpp:42</tspan></text>
 <text x="360.0" y="404" class="r" style="animation-delay:2.25s"><tspan fill="#8b949e">- GitHub Stats -------------------------------------------</tspan></text>
-<text x="360.0" y="424" class="r" style="animation-delay:2.30s"><tspan fill="#ffa657">Public Repos: </tspan><tspan fill="#8b949e">......................................... </tspan><tspan fill="#a5d6ff">2</tspan></text>
+<text x="360.0" y="424" class="r" style="animation-delay:2.30s"><tspan fill="#ffa657">Public Repos: </tspan><tspan fill="#8b949e">......................................... </tspan><tspan fill="#a5d6ff">3</tspan></text>
 <text x="360.0" y="444" class="r" style="animation-delay:2.35s"><tspan fill="#ffa657">Stars: </tspan><tspan fill="#8b949e">................................................ </tspan><tspan fill="#a5d6ff">0</tspan></text>
 <text x="360.0" y="464" class="r" style="animation-delay:2.40s"><tspan fill="#ffa657">Followers: </tspan><tspan fill="#8b949e">............................................ </tspan><tspan fill="#a5d6ff">1</tspan></text>
-<text x="360.0" y="484" class="r" style="animation-delay:2.45s"><tspan fill="#ffa657">Contributions (all time): </tspan><tspan fill="#8b949e">........................... </tspan><tspan fill="#a5d6ff">137</tspan></text>
+<text x="360.0" y="484" class="r" style="animation-delay:2.45s"><tspan fill="#ffa657">Contributions (all time): </tspan><tspan fill="#8b949e">........................... </tspan><tspan fill="#a5d6ff">144</tspan></text>
 <text x="24" y="524" class="r" style="animation-delay:2.70s"><tspan fill="#3fb950">koko@segfaultlab</tspan><tspan fill="#c9d1d9">:</tspan><tspan fill="#79c0ff">~</tspan><tspan fill="#c9d1d9">$ </tspan><tspan fill="#c9d1d9">fortune</tspan></text>
 <style>@keyframes type2{to{transform:translateX(58.8px)}}</style>
 <rect x="192.0" y="509" width="58.8" height="20" fill="#161b22" style="animation:type2 0.7s steps(7) 3.00s forwards"/>
 <rect x="192.0" y="510" width="8.4" height="18" fill="#c9d1d9" style="opacity:0;animation:show .01s linear 2.80s forwards,type2 0.7s steps(7) 3.00s forwards,hide .01s linear 3.90s forwards"/>
-<text x="24" y="544" class="r" style="animation-delay:4.00s"><tspan fill="#c9d1d9">Weeks of coding can save you hours of planning.</tspan></text>
-<text x="24" y="584" class="r" style="animation-delay:4.00s"><tspan fill="#8b949e">    -- Unknown</tspan></text>
+<text x="24" y="544" class="r" style="animation-delay:4.00s"><tspan fill="#c9d1d9">It works on my machine.</tspan></text>
+<text x="24" y="584" class="r" style="animation-delay:4.00s"><tspan fill="#8b949e">    -- Every developer, ever</tspan></text>
 <g class="r" style="animation-delay:4.30s">
 <text x="24" y="624"><tspan fill="#3fb950">koko@segfaultlab</tspan><tspan fill="#c9d1d9">:</tspan><tspan fill="#79c0ff">~</tspan><tspan fill="#c9d1d9">$ </tspan></text>
 <rect class="blink" x="192.0" y="610" width="8.4" height="18" fill="#c9d1d9"/>
