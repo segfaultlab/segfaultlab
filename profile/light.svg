@@ -33,7 +33,7 @@ text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',mo
 <text x="360.0" y="104" class="r" style="animation-delay:1.50s"><tspan fill="#1a7f37">koko</tspan><tspan fill="#24292f">@</tspan><tspan fill="#1a7f37">segfaultlab</tspan></text>
 <text x="360.0" y="124" class="r" style="animation-delay:1.55s"><tspan fill="#6e7781">----------------------------------------------------------</tspan></text>
 <text x="360.0" y="144" class="r" style="animation-delay:1.60s"><tspan fill="#953800">OS: </tspan><tspan fill="#6e7781">........................... </tspan><tspan fill="#0a3069">Linux, macOS, OpenHarmony</tspan></text>
-<text x="360.0" y="164" class="r" style="animation-delay:1.65s"><tspan fill="#953800">Uptime: </tspan><tspan fill="#6e7781">...................... </tspan><tspan fill="#0a3069">4 years, 3 months, 28 days</tspan></text>
+<text x="360.0" y="164" class="r" style="animation-delay:1.65s"><tspan fill="#953800">Uptime: </tspan><tspan fill="#6e7781">...................... </tspan><tspan fill="#0a3069">4 years, 3 months, 29 days</tspan></text>
 <text x="360.0" y="184" class="r" style="animation-delay:1.70s"><tspan fill="#953800">Host: </tspan><tspan fill="#6e7781">...................................... </tspan><tspan fill="#0a3069">Wuhan, China</tspan></text>
 <text x="360.0" y="204" class="r" style="animation-delay:1.75s"><tspan fill="#953800">Kernel: </tspan><tspan fill="#6e7781">................. </tspan><tspan fill="#0a3069">Embedded Linux, OTA, Toolchains</tspan></text>
 <text x="360.0" y="224" class="r" style="animation-delay:1.80s"><tspan fill="#953800">Focus: </tspan><tspan fill="#6e7781">................. </tspan><tspan fill="#0a3069">Cross-compilation, Agent Runtime</tspan></text>
@@ -60,8 +60,8 @@ text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',mo
 <style>@keyframes type2{to{transform:translateX(58.8px)}}</style>
 <rect x="192.0" y="509" width="58.8" height="20" fill="#ffffff" style="animation:type2 0.7s steps(7) 3.00s forwards"/>
 <rect x="192.0" y="510" width="8.4" height="18" fill="#24292f" style="opacity:0;animation:show .01s linear 2.80s forwards,type2 0.7s steps(7) 3.00s forwards,hide .01s linear 3.90s forwards"/>
-<text x="24" y="544" class="r" style="animation-delay:4.00s"><tspan fill="#24292f">There's no place like 127.0.0.1.</tspan></text>
-<text x="24" y="584" class="r" style="animation-delay:4.00s"><tspan fill="#6e7781">    -- Unknown</tspan></text>
+<text x="24" y="544" class="r" style="animation-delay:4.00s"><tspan fill="#24292f">Segmentation fault (core dumped)</tspan></text>
+<text x="24" y="584" class="r" style="animation-delay:4.00s"><tspan fill="#6e7781">    -- My terminal, usually at 3 a.m.</tspan></text>
 <g class="r" style="animation-delay:4.30s">
 <text x="24" y="624"><tspan fill="#1a7f37">koko@segfaultlab</tspan><tspan fill="#24292f">:</tspan><tspan fill="#0550ae">~</tspan><tspan fill="#24292f">$ </tspan></text>
 <rect class="blink" x="192.0" y="610" width="8.4" height="18" fill="#24292f"/>
